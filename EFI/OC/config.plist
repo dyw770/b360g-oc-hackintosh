@@ -32,7 +32,7 @@
 			<key>FadtEnableReset</key>
 			<false/>
 			<key>NormalizeHeaders</key>
-			<true/>
+			<false/>
 			<key>RebaseRegions</key>
 			<false/>
 			<key>ResetHwSig</key>
@@ -147,24 +147,6 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>USBPorts.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
 				<string>VirtualSMC.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -262,6 +244,24 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/WhateverGreen</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>USBPorts.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -536,7 +536,7 @@
 			<key>AppleEvent</key>
 			<string>Auto</string>
 			<key>CustomDelays</key>
-			<string>Auto</string>
+			<false/>
 			<key>KeyInitialDelay</key>
 			<integer>0</integer>
 			<key>KeySubsequentDelay</key>
@@ -571,7 +571,7 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
-			<string>HfsPlus.efi</string>
+			<string>OpenHfsPlus.efi</string>
 			<string>OpenRuntime.efi</string>
 			<string>OpenCanopy.efi</string>
 		</array>
@@ -644,7 +644,7 @@
 			<key>AppleSecureBoot</key>
 			<false/>
 			<key>AppleSmcIo</key>
-			<true/>
+			<false/>
 			<key>AppleUserInterfaceTheme</key>
 			<false/>
 			<key>DataHub</key>
@@ -666,12 +666,18 @@
 			<false/>
 			<key>DisableSecurityPolicy</key>
 			<false/>
+			<key>EnableVectorAcceleration</key>
+			<true/>
 			<key>ExitBootServicesDelay</key>
-			<integer>2</integer>
+			<integer>0</integer>
+			<key>ForgeUefiSupport</key>
+			<false/>
 			<key>IgnoreInvalidFlexRatio</key>
 			<false/>
 			<key>ReleaseUsbOwnership</key>
-			<true/>
+			<false/>
+			<key>ReloadOptionRoms</key>
+			<false/>
 			<key>RequestBootVarRouting</key>
 			<true/>
 			<key>TscSyncTimeout</key>
